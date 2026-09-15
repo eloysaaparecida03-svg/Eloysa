@@ -100,3 +100,19 @@ p{
     line-height: 1.6;
     margin-bottom: 28px;
 }
+
+.bnt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.bnt:hover {
+    /*efeito ao passar o mause no botão*/
+    background: #ef4444;
+    box-shadow: 0 0 25px rgba(239, 68, 68, 0.6);
+    transform: scale(1.02);
+}
+
+começei a configuração dos elementos no meu css, fiz a estilização do meu body, configuração dos elementos, configuração principal da página, cria os efeitos de luz no fundo, posiciona a luz vermelha,Posiociona a luz azul, estiliza o cartão principal, efeito ao passar o mouse no cartão, estiliza e etiqueta/badge, estiliza o titulo principal,estiliza o texto/paragrafo
