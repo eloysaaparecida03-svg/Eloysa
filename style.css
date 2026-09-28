@@ -3,11 +3,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body{
-    /*configuração principal da página*/
+    /* Configuração principal da página*/
     background: #090d16;
     color: #f8fafc;
     min-height: 100vh;
@@ -19,7 +19,7 @@ body{
 }
 
 body::before, body::after{
-    /*cria os efeitos de luz no fundo*/
+    /*cria efeitos de luz no fundo*/
     content: '';
     position: absolute;
     width: 300px;
@@ -36,61 +36,54 @@ body::before{
     left: 25%;
 }
 
-body::after{
-    /*Posiociona a luz azul*/
-    background: #2563eb;
+body::after {
+    background: #2563db;
     bottom: 20%;
     right: 25%;
 }
-
-.card{
+ .card {
     /*estiliza o cartão principal*/
     position: relative;
     z-index: 1;
-    background: rgbs(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border: 1px solid rgba(255, 255, 255, 0.12);
     padding: 40px 32px;
     border-radius: 24px;
     max-width: 420px;
-    width: 905;
+    width: 90%;
     text-align: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
-    transition: transform 0.35 ease, border-color 0.3s ease;
-}
+    box-shadow: 0 20px 40px rgba(0, 0 , 0, 0.5);
+    transition: transform 0.3s ease , border-color 0.3s ease;
+ }
+ .card:hover{
+    transform:translateY(-5px);
+    border-color:rgba(255,255,255,0.25);
 
-.card:hover {
-    /*efeito ao passar o mouse no cartão*/
-    transform: translateY(-5px);
-    border-color: rgba(255, 255, 255, 0.25);
-}
-
-.badge {
-    /*estiliza e etiqueta/badge*/
-    display: inline;
+ }
+.badge{
+    display: inline-block;
     background: rgba(220, 38, 38, 0.2);
     color: #f87171;
     border: 1px solid rgba(248, 113, 113, 0.3);
     padding: 6px 16px;
     border-radius: 100px;
-    font-size: 0.75rem;
-font-weight: 700;
-letter-spacing:1.5px ;
-text-transform:uppercase ;
-margin-bottom: 20px;
+    font-size:0.75rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
-
-h1 {
-    /*estiliza o titulo principal*/
-    font-size: 2.1rem;
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 12px;
-    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent ;
+h1{
+font-size: 2.1rem;
+font-weight: 800;
+line-height: 1.2;
+margin-bottom: 12px;
+background: linear-gradient(135deg, #ffff 0%, #cbd5e1);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 p{
@@ -101,7 +94,8 @@ p{
     margin-bottom: 28px;
 }
 
-.bnt {
+.btn {
+    /*estliza o botão*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -115,14 +109,11 @@ p{
     font-weight: 700;
     font-size: 1rem;
     box-shadow: 0 0 20px rgba(220, 38, 38, 0.35);
-    transform: scale(1.02);
+    transition: all 0.3s ease;
 }
-
-.bnt:hover {
-    /*efeito ao passar o mause no botão*/
+ .btn:hover{
+    /*efeito ao passar o mouse no botâo*/
     background: #ef4444;
     box-shadow: 0 0 25px rgba(239, 68, 68, 0.6);
     transform: scale(1.02);
-}
-
-começei a configuração dos elementos no meu css, fiz a estilização do meu body, configuração dos elementos, configuração principal da página, cria os efeitos de luz no fundo, posiciona a luz vermelha,Posiociona a luz azul, estiliza o cartão principal, efeito ao passar o mouse no cartão, estiliza e etiqueta/badge, estiliza o titulo principal,estiliza o texto/paragrafo
+ }
