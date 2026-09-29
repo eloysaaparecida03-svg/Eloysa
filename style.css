@@ -121,7 +121,7 @@ p{
  /*segunda aprte do nosso css*/
 
  .conteudo{
-    /*define o tamanho e a posição da nova sessão */
+    /*define o tamanho e a posição da nova sessão*/
     position: relative;
     z-index: 1;
     width: 100%;
