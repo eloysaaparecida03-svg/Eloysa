@@ -128,3 +128,10 @@ p{
     max-width: 1000px;
     text-align: center;
  }
+
+ .conteudo h2 {
+    /*estilliza o titulo da nova sessão*/
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+ }
