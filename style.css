@@ -177,3 +177,13 @@ p{
     font-size: 1.4rem;
     margin-bottom: 15px ;
 }
+
+.info-card p{
+    /*AJUSTE O ESPAÇAMENTO entre os paragrafos*/
+     margin-bottom: 12px;
+}
+
+.info-card p:last-child{
+    /*re,ove o esoaco a baixo do ultimo paragrafo*/
+    margin-bottom: 0;
+}
