@@ -162,3 +162,18 @@ p{
     /*Adiciona uma transição suave */
     transition: 0.3s ease;
 }
+
+.info-card:hover{
+    /*eleve o cartão quando o mause passa sobre ele */
+    transform: translateY(-5px);
+
+    /*altera a cor da borda para vermelho*/
+    border-color: #dc2626;
+}
+
+.info-card h3{
+    /*estiliza os titulos git e github*/
+    color: #f87171;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
