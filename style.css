@@ -184,6 +184,19 @@ p{
 }
 
 .info-card p:last-child{
-    /*re,ove o esoaco a baixo do ultimo paragrafo*/
+    /*remove o esoaco a baixo do ultimo paragrafo*/
     margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+
+    .informacoes {
+        /*organize os cartões um a baixo do outro quando a tela for pequena*/
+        grid-template-columns: 1fr;
+    }
+
+    .conteudo h2{
+        /*diminui o tamanho do titulo no celular*/
+        font-size: 1.6rem;
+    }
 }
