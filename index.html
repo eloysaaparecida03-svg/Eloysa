@@ -42,7 +42,8 @@
             </p>
 
             <p>
-                com ele podemos registrar alterações, recuperar versões anteriores e trabalhar em equipe.
+                com ele podemos registrar alterações, 
+                recuperar versões anteriores e trabalhar em equipe.
             </p>
          </div>
 
@@ -51,12 +52,93 @@
 
             <h3>GitHub </h3>
 
-            <p> o Github é uma paltaforma online que permite armazenar e compartilhar repositórios git</p>
+            <p> o Github é uma paltaforma online que
+                 permite armazenar e compartilhar repositórios git</p>
 
-            <p>por meio deles, podemos compartilhar projetos, colaborar com outros desenvolvedores e visualizar o histórico de alterações.</p>
+            <p>por meio deles, podemos compartilhar projetos, 
+                colaborar com outros desenvolvedores e visualizar o 
+                histórico de alterações.</p>
          </div>
        </div>
     </section>
+
+
+
+    <!--PART 3: NOVAS FUNCIONALIDADES-->
+
+        <!--NOVO: links internos levam o visitante até cada seção pelo seu id-->
+        <nav class="menu-estudo" aria-label="Navegação dos estudos">
+            <a href="#comandos">Consultar comandos</a>
+            <a href="#atividade"> Minha aividade</a>
+            <a href="#materiais"> Materiais de apoio</a>
+        </nav>
+
+        <section class="conteudo estudo" id="comandos">
+            <h2>Comandos para praticar</h2>
+            <p>Clique em um comando para abrir sua explicação. No teclado,
+                use Tab e Enter.
+            </p>
+        </section>
+
+        <!--NOVO: details abre e fecha sem JavaScript; summary é o titulo clicável.-->
+        <details>
+            <summary>1. git init - iniciar um repositorio</summary>
+            <p>Execute na pasta do projeto para começar a controlar suas versões.</p>
+            <!--A tag code indentifica um trecho de código ou um comando-->
+            <code> git init</code>
+        </details>
+
+        <details>
+            <summary>2. git status - conferir as alterações</summary>
+            <p>Mostra quais arquivos foram modificados e quais estão preparados
+                para o próximo commit.
+            </p>
+            <code>git status</code>
+        </details>
+
+        <details>
+            <summary>3. git add - preparar os arquivos</summary>
+            <p>Prepara as alterações dos dois arquivos parea o próximo commt. Ainda não
+                cria uma versão.
+            </p>
+            <code>git add index.html style.css</code>
+        </details>
+
+        <details>
+            <summary>4. git commit - registrar uma versão</summary>
+            <p>Registra as alterações preparadas. Escreva uma mensagem que explique o que
+                você fez.
+            </p>
+            <code>git commit -m "Adiciona area de estudo"</code>
+        </details>
+
+        <details>
+            <summary>5. git log - consultar o histórco</summary>
+            <p>Exibe os commits de forma resumida, com um registro por linha.
+            </p>
+            <code>git log --oneline</code>
+        </details>
+
+        <details>
+            <summary>6. git push - enviar para o Github</summary>
+            <p>>Envia os commits para o repositório remoto. Este exemplo exige um remoto chamado
+                origin, uma branch chamada mais e autenticação configurados com o professor</p>
+                <code>git push -u origin main</code>
+        </details>
+
+        <section class="conteudo estudo" id="atividade">
+            <h2>Checklist de atividade</h2>
+            <p>Marque cada etapa concluida. As marcações são temporarias e não são slavas pelo   </p>
+
+            <!-- NOVO fieldset reúne campos relacionados; legend da um nome ao grupo.-->
+             <fieldset class="checklist">
+                <legend>imha pratica de HTML, css e git</legend>
+                <!--O input checkbox cria uma caixa de seleção. 
+                o label permite marcar a caixa clicandotambem no texto-->
+             </fieldset>
+             </section>
+</body>
+</html>
 </body>
 </html>
 
